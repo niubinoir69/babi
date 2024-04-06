@@ -1,0 +1,322 @@
+
+
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en"> <!--<![endif]-->
+
+<head>
+	<meta name="viewport" content="width = 1050, user-scalable = no" />
+	<script type="text/javascript" src="files/extras/jquery.min.1.7.js"></script>
+	<script type="text/javascript" src="files/extras/modernizr.2.5.3.min.js"></script>
+	<title>My gift for you my babi</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			height: 100vh;
+			background: linear-gradient(to bottom, #fbd3e9, #bb377d);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			overflow: hidden;
+			/* Prevents the hearts from scrolling with the page */
+		}
+
+		.flipbook-viewport {
+			z-index: 1;
+			/* Make sure the hearts are behind the flipbook */
+		}
+
+		.container {
+			position: relative;
+		}
+
+		.title {
+			color: white;
+			font-size: 40px;
+			position: absolute;
+			top: 20px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+		.subtitle {
+			font-size: 16px;
+			position: absolute;
+			top: 55%;
+			color: lightgray;
+		}
+
+		.heart {
+			position: absolute;
+			width: 10px;
+			height: 10px;
+			background-color: #e2264d;
+			transform: rotate(-45deg);
+			animation: pop 1s ease-out;
+			animation-fill-mode: forwards;
+		}
+
+		.heart::before,
+		.heart::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			background-color: #e2264d;
+		}
+
+		.heart::before {
+			left: 10px;
+		}
+
+		.heart::after {
+			left: 0;
+		}
+
+		@keyframes pop {
+			0% {
+				transform: scale(0);
+			}
+
+			100% {
+				transform: scale(1);
+			}
+		}
+
+		.title {
+			color: white;
+			font-size: 26px;
+		}
+
+		.para {
+			margin: 15px;
+			text-indent: 1em;
+			text-align: justify;
+		}
+
+		.p-image {
+			width: 250px !important;
+			height: 200px !important;
+		}
+
+		.numbering-right {
+			position: absolute;
+			bottom: 10px;
+			right: 10px;
+			color: black;
+			font-size: 16px;
+		}
+
+		.numbering-left {
+			position: absolute;
+			bottom: 10px;
+			left: 10px;
+			color: black;
+			font-size: 16px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="flipbook-viewport">
+		<div class="container">
+			<div class="flipbook">
+				<div style="background-image:url(files/pages/cover.jpg); text-align:center;">
+					<div class="title">
+						<h1>MY BABI</h1>
+						<p class="subtitle">"The one and only beautiful girl and the love of my life."</p>
+					</div>
+				</div>
+
+				<div style="background-image:url(files/pages/day2\ sweet\ and\ verse.jpg)">
+					<span class="numbering-left">1</span>
+				</div>
+				<div style="background-image:url(pages/3.jpg);">
+					<img class="p-image" src="files/pages/hanul.jpg" alt="" srcset="" style="margin: 10px 100px;">
+					<p class="para">This is the 2nd day of our meeting my love, eto yung araw na nakita mo si Hanul at
+						nagpatulong ka saken bumili ng kulungan at catlitter.</p>
+					<p class="para">Kinwento mo saken kung ano nangyare sa mga pusa mo that time. It's amazing how you
+						still recognize Hanul despite being lost for 2 years?</p>
+					<p class="para">After that, tayo'y nagtungo na sa inyong house, I think eto rin yung time na nanood
+						tayo ng Euphoria at nag foot spa hehe.</p>
+					<p class="para">"Love it."</p>
+
+					<p class="para"><i>Since wala tayong pics ng 1st day naten, let me give you nalang a summary kung
+							ano
+							ginawa naten non, kumain tayo sa mcdo, nag lakad sa IBP road kase malakas tama naten,
+							pumunta ng
+							Quiapo para umuwi HAHAHA</i></p>
+
+					<span class="numbering-right">2</span>
+				</div>
+
+				<div style="background-image:url(pages/day3.jpg)">
+					<img class="" src="files/pages/ointment.jpg" alt="" srcset=""
+						style="margin: 10px 150px; width:150px; height:200px">
+					<p class="para">3rd day of our meeting, nagpasama ka bumili ng oitment, buong pharmacy dito sa
+						commonwealth at litex pinuntahan ko pero nabigo akong makakita. </p>
+
+					<p class="para">
+						Then we meet tas pumunta tayo sa
+						Mercury Drugs Don Antonio Branch but again failed kase sa online lang pala yon. Eto rin yung
+						time na nag Savanno tayo HAHAHA. turn to the next page my girl</p>
+
+					<p class="para">"Cutie nag send ng pic hehe and I love it my gorgeous girl!"</p>
+					<span class="numbering-left">3</span>
+				</div>
+				<div style="background-image:url(files/pages/day3.jpg)"><span class="numbering-right">4</span></div>
+
+				<div style="background-image:url(files/pages/day4\ savanno.jpg)"><span class="numbering-left"
+						style="color: white;">5</span></div>
+				<div style="background-image:url(pages/7.jpg)">
+					<p class="para">Sa Savanno nag milktea tayo, kwentuhan about life, and this is the time na mas
+						nakilala kita.</p>
+					<p class="para">You possess a gentle heart with a fierce attitude. The way na kung pano ka mag stand
+						up sa tao. <i>*talking about your family*</i></p>
+					<p class="para">Eto rin yung time na I dont know but nagstart tayo maging intimate sa isa't isa. Mga
+						deep talks naten, sarap makipag kwentuhan sayo, sarap mo kasama</p>
+					<p class="para"><i>"Gentle heart with a fierce attitude - Para kang Lion Cub RAWR!!"</i></p>
+					<img class="p-image" src="files/pages/cute cub.jpg" style="margin: 10px 100px;" alt="" srcset="">
+					<span class="numbering-right">6</span>
+				</div>
+
+				<div style="background-image:url(pages/8.jpg)">
+					<p class="para">Mga sumunod na araw, tuloy tuloy parin tayo ng pagkikita. Until the time na napunta
+						tayo ng flix para kumanta, pero imbis na kumanta alam mo na ang nangyare HAHAHA. </p>
+					<p class="para">
+						And it is the
+						one of my favorites, ang start ng ligaw phase. Di ko na uulitin yung mga nasa isip ko nun that
+						time dahil nasabi ko na yun dun sa una kong wattpad story na sinend duhh.
+					</p>
+					<p class="para">The time goes on, madaming nangyare, nahuli tayo ni tita, <i>although nahuli tayo ni
+							tita wala pang ganap but still</i>, ate Angie, at Kuya Andy HAHAAHA</p>
+					<p class="para">Nag date tayo sa Fairview Terraces, uminom ng milktea sa Coco ba yon? basta masaya
+						ako kasama ka.</p>
+					<p class="para">"Cutiepie my love".</p>
+
+					<span class="numbering-left">7</span>
+				</div>
+				<div style="background-image:url(files/pages/day7\(5\).jpg)">
+					<span class="numbering-right">8</span>
+				</div>
+
+				<div style="background-image:url(files/pages/vote.jpg)">
+					<span class="numbering-left">9</span>
+				</div>
+				<div style="background-image:url(pages/11.jpg)">
+					<p class="para">
+						First time naten mag vote together, muntikan ka pang ma cut off hanggang 3pm lang pala HAHAHA.
+					</p>
+
+					<p class="para">
+						This is also the first time na nakapag samgyup ako. Thank you sa experience my love, sana
+						forever na kitang makasama sa sanggyupan
+					</p>
+
+					<p class="para">"Thank you babi for existing."</p>
+					<span class="numbering-right">10</span>
+				</div>
+
+				<div style="background-image:url(pages/12.jpg)">
+					<p class="para">This is the end of chapter 1</p>
+					<p class="para">I just want to say thank you very much babi, for everything. Napaka swerte ko
+						sayo,hulog ka ng langit. I really love you, you make me happy everyday, and I hope I make you
+						happy too.</p>
+					<p class="para">
+						Eventhough there are so many ick sa akin, nanjan ka paren, at sana di ka mapagod babi, ganon din
+						ako sayo. I'll make you the happiest girl in the world, not now but soon. I'll make sure of it.
+					</p>
+					<p class="para">
+						And sorry babi, sa nangyare kahapon, wala akong naibigay sayo, or nailabas manlang, ayoko naman
+						yung mga bulaklak na plastic jan na mura lang, I want it to be special and gusto ko unang regalo
+						ko sayo ay special, yung hindi common na nakikita lang kung saan. I want it to be unique, yung
+						pinaghirapan ko, yung skills ko ang gamit, to express my love for you, kung gano ka ka special
+						saken babi.
+					</p>
+
+					<p class="para">
+						Hindi ko intention na iparamdam sayo na di saken importante yung araw na to, in fact
+						pinagiisipan ko tong araw na to, but wala nawalan ako ng budget, ang plan ko kahapon is mag
+						house data nalang tayo jan babi, nood tayo movies, tapos luluto tayo foods. I love you so much babi, I'm so sorry for everything I've done
+					</p>
+					<p class="para">
+						I LOVE YOU SO MUCH BABI, HAPPY 1ST VALENTINES DAY WITH YOU, MAHAL NA MAHAL KITA, SA SUSUNOD NA YUNG CHAPTER 2 SA BIRTHDAY MO NA HAHAHA
+					</p>
+					<span class="numbering-left">11</span>
+				</div>
+				<div style="background-image:url(files/pages/nov1.jpg)">
+					<span class="numbering-right">12</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			createHearts();
+			loadApp(); // Call loadApp after creating hearts
+		});
+
+		function createHearts() {
+			const numberOfHearts = 10; // Adjust as needed
+
+			for (let i = 0; i < numberOfHearts; i++) {
+				createHeart();
+			}
+		}
+
+		function createHeart() {
+			const heart = document.createElement('div');
+			heart.className = 'heart';
+			document.body.appendChild(heart);
+
+			const randomX = Math.floor(Math.random() * window.innerWidth);
+			const randomY = Math.floor(Math.random() * window.innerHeight);
+			const randomDelay = Math.random() * 2; // Random delay for each heart
+
+			// Apply random positioning and delay
+			$(heart).css({
+				left: randomX + 'px',
+				top: randomY + 'px',
+				animationDelay: -randomDelay + 's',
+			});
+		}
+
+		function loadApp() {
+			// Create the flipbook
+			$('.flipbook').turn({
+				// Width
+				width: 922,
+				// Height
+				height: 600,
+				// Elevation
+				elevation: 50,
+				// Enable gradients
+				gradients: true,
+				// Auto center this flipbook
+				autoCenter: true
+			});
+		}
+
+		// Load the HTML4 version if there's no CSS transform
+		yepnope({
+			test: Modernizr.csstransforms,
+			yep: ['files/lib/turn.js'],
+			nope: ['files/lib/turn.html4.min.js'],
+			both: ['files/css/basic.css'],
+			complete: function () {
+				loadApp();
+			}
+		});
+	</script>
+
+</body>
+
+</html>
