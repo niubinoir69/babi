@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enter PIN</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-image: linear-gradient(to bottom right, #ffffff, #ff99cc); /* Pink gradient background */
+    }
+
+    .container {
+        text-align: center;
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin-top: 10px;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    .error {
+        color: #dc3545;
+        margin-top: 10px;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Enter PIN to Proceed</h1>
+    <div>
+        <label for="pin">Enter PIN:</label>
+        <input type="password" id="pin" name="pin">
+        <button onclick="verifyPIN()">Proceed</button>
+        <div id="error-msg" class="error" style="display: none;">Invalid PIN</div>
+    </div>
+</div>
+
+<script>
+    const correctPIN = "001122";
+
+    function verifyPIN() {
+        const enteredPIN = document.getElementById('pin').value;
+        if (enteredPIN === correctPIN) {
+            window.location.href = "next_page.html";
+        } else {
+            document.getElementById('error-msg').style.display = "block";
+        }
+    }
+</script>
+</body>
+</html>
